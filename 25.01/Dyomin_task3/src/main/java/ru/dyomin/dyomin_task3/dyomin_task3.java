@@ -37,9 +37,9 @@ public class dyomin_task3 {
     public void Button(ActionEvent actionEvent) {
         int chis = Integer.parseInt(chisl.getText().toString());
         if (chis > 0) {
-            double sum = 0.0;
+            double sum = 0;
             for (int i = 1; i <= chis; i++) {
-                sum += 1.0 / i;
+                sum += 1 / i;
                 result.setText("Сумма :" + sum);
             }
         } else {

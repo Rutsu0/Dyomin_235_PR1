@@ -32,16 +32,16 @@ public class dyomin_task4 {
         int n = Integer.parseInt(N.getText());
         if (n > 1) {
             int k = 1;
-            while (true) {
-                if (3 * k > n) {
-                    break;
-                }
+            while (3 * k <= n) {
                 k++;
-            } result.setText("k = " + k);
+            }
+            result.setText("k = " + (k - 1));
         } else {
             result.setText("Введено число < 1");
         }
+
     }
+
 
     @FXML
     void initialize() {
