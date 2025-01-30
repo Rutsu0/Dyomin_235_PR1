@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.dyomin.dyomin_marathon.controller.loginController">
+   <children>
+      <ToolBar layoutX="20.0" layoutY="20.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: FFA500;" AnchorPane.bottomAnchor="355.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ToolBar layoutX="20.0" layoutY="20.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: FFA500;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="370.0" />
+      <GridPane alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="455.0" minWidth="10.0" prefWidth="439.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="77.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="78.0" minHeight="10.0" percentHeight="0.0" prefHeight="47.0" valignment="CENTER" />
+            <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="112.0" minHeight="10.0" prefHeight="91.0" />
+            <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Volgograd Marathon 2025" textOverrun="CLIP" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="90.0" />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="backButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#backButtonOnAction" text="Назад">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Button>
+            <Label text="До события осталось 87 дней" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label text="Форма авторизации" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="35.0" />
+               </padding>
+            </Label>
+            <Label text="Пожалуйста , авторизуйстесь в системе, используя ваш адрес  электронной почты и пароль" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+            </Label>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="188.0" minWidth="10.0" prefWidth="162.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="280.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="77.0" minHeight="0.0" prefHeight="46.0" valignment="CENTER" />
+                <RowConstraints maxHeight="91.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" text="Email:">
+                     <GridPane.margin>
+                        <Insets left="19.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Pasword:" GridPane.rowIndex="1" />
+                  <TextField  promptText="Enter your email address" GridPane.columnIndex="1" />
+                  <TextField  promptText="Enter your password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+              <columnConstraints>
+                <ColumnConstraints halignment="LEFT" maxWidth="236.0" minWidth="10.0" prefWidth="220.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.0" minWidth="10.0" prefWidth="222.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#saveLoginButtonOnAction" text="Login">
+                     <GridPane.margin>
+                        <Insets left="135.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#backButtonOnAction" text="Cancel" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </GridPane>
+   </children>
+</AnchorPane>

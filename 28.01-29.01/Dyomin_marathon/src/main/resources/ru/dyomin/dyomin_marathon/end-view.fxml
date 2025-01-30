@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.dyomin.dyomin_marathon.controller.endController">
+   <children>
+      <ToolBar layoutX="20.0" layoutY="20.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: FFA500;" AnchorPane.bottomAnchor="355.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ToolBar layoutX="20.0" layoutY="20.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: FFA500;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="370.0" />
+      <GridPane alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="77.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="533.0" minWidth="10.0" prefWidth="523.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="207.0" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="207.0" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="0.0" prefWidth="0.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="78.0" minHeight="10.0" percentHeight="0.0" prefHeight="46.0" valignment="CENTER" />
+            <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="207.0" minHeight="0.0" prefHeight="204.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="69.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="32.0" prefWidth="307.0" text="Volgograd Marathon 2025" textOverrun="CLIP" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="200.0" />
+               </GridPane.margin>
+            </Label>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#backButtonOnAction" text="Назад">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Button>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="4" GridPane.rowIndex="4">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#closeAppButtonOnAction" text="OK">
+                     <padding>
+                        <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <children>
+                  <Label alignment="TOP_CENTER" text="До события осталось 87 дней">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+               <children>
+                  <Label text="Спасибо за вашу регистрацию в качестве бегуна!">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+               <children>
+                  <Label text="Спасибо за вашу регистрацию в качестве бегуна в Marathon Skills 2016!">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="3">
+               <children>
+                  <Label text="С вами свяжутся по поводу оплаты.">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </GridPane>
+   </children>
+</AnchorPane>
